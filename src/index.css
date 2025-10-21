@@ -8,9 +8,9 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Pure black background */
-    --background: 0 0% 0%;
-    --foreground: 0 0% 100%;
+    /* Light mode - white background */
+    --background: 0 0% 100%;
+    --foreground: 0 0% 5%;
 
     /* Card with subtle elevation */
     --card: 0 0% 98%;
@@ -56,8 +56,8 @@ All colors MUST be HSL.
   }
 
   .dark {
-    /* Dark background matching logo */
-    --background: 216 7% 17%;
+    /* Pure black background */
+    --background: 0 0% 0%;
     --foreground: 0 0% 100%;
 
     /* Card with subtle dark elevation */
