@@ -12,7 +12,8 @@ const Navigation = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > window.innerHeight * 0.8);
+      // Show logo when main body logo scrolls behind header (approximately 300-400px)
+      setIsScrolled(window.scrollY > 350);
     };
     
     window.addEventListener('scroll', handleScroll);
