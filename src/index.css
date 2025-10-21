@@ -8,9 +8,9 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Light mode - clean white background with vibrant accents */
-    --background: 0 0% 100%;
-    --foreground: 0 0% 5%;
+    /* Light mode - clean white background */
+    --background: 0 0% 0%;
+    --foreground: 0 0% 100%;
 
     /* Card with subtle elevation */
     --card: 0 0% 98%;

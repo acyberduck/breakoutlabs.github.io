@@ -46,12 +46,9 @@ const Hero = () => {
           <img 
             src={theme === "dark" ? logoDark : logoLight} 
             alt="Breakout Labs" 
-            className="w-32 h-32 mx-auto mb-8"
+            className="w-64 h-auto mx-auto mb-12 object-contain"
+            style={{ clipPath: 'inset(15% 0 15% 0)' }}
           />
-          
-          <h1 className="text-5xl md:text-7xl font-black mb-6 bg-gradient-primary bg-clip-text text-transparent">
-            Breakout Labs
-          </h1>
           
           <p className="text-2xl md:text-3xl font-light mb-8 text-foreground">
             Designing Tomorrow's Finance, <span className="text-accent font-semibold">Today</span>

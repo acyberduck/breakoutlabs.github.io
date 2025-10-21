@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Menu, X, Moon, Sun } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useTheme } from "next-themes";
@@ -7,7 +7,17 @@ import logoLight from "@/assets/breakout-labs-logo-light.png";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
   const { theme, setTheme } = useTheme();
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > window.innerHeight * 0.8);
+    };
+    
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
@@ -19,19 +29,19 @@ const Navigation = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-lg border-b border-border">
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-          {/* Logo */}
-          <div className="flex items-center">
+          {/* Logo - centered and animated */}
+          <div className={`flex-1 flex justify-center transition-all duration-500 ${isScrolled ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-4 pointer-events-none'}`}>
             <img 
               src={theme === "dark" ? logoDark : logoLight} 
               alt="Breakout Labs Logo" 
               className="h-16 w-auto object-contain"
-              style={{ objectPosition: 'center', clipPath: 'inset(15% 0 15% 0)' }}
+              style={{ objectPosition: 'center', clipPath: 'inset(25% 0 25% 0)' }}
             />
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-6">
-            <button 
+          <div className="hidden md:flex items-center gap-6 absolute right-4">
+            <button
               onClick={() => scrollToSection("home")}
               className="text-foreground hover:text-primary transition-colors"
             >
@@ -62,7 +72,7 @@ const Navigation = () => {
           </div>
 
           {/* Mobile Menu Button and Theme Toggle */}
-          <div className="md:hidden flex items-center gap-2">
+          <div className="md:hidden flex items-center gap-2 absolute right-4">
             <Button
               variant="ghost"
               size="icon"
