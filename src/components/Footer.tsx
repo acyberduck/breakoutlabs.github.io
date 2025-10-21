@@ -33,7 +33,7 @@ const Footer = () => {
       const body = encodeURIComponent(
         `Name: ${validatedData.name}\nEmail: ${validatedData.email}\n\nMessage:\n${validatedData.message}`
       );
-      const mailtoLink = `mailto:admin@breakoutlabs.com?subject=${subject}&body=${body}`;
+      const mailtoLink = `mailto:hello@breakoutlabs.cc?subject=${subject}&body=${body}`;
       
       // Open default email client
       window.location.href = mailtoLink;
@@ -144,7 +144,7 @@ const Footer = () => {
           <div className="text-center space-y-6">
             <div className="flex justify-center gap-6">
               <a 
-                href="mailto:breakoutlabs@contact.com"
+                href="mailto:hello@breakoutlabs.cc"
                 className="text-muted-foreground hover:text-primary transition-colors"
                 aria-label="Email"
               >

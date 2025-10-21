@@ -62,13 +62,13 @@ const Hero = () => {
             ideation, prototyping, and management for Fintech and Web3.
           </p>
 
-          <a href="mailto:breakoutlabs@contact.com">
+          <a href="mailto:hello@breakoutlabs.cc">
             <Button 
               size="lg" 
               className="text-lg px-8 py-6 shadow-neon-green hover:shadow-neon-blue transition-all duration-300 bg-accent hover:bg-primary text-accent-foreground font-bold"
             >
               <Mail className="mr-2 h-5 w-5" />
-              Contact Us at breakoutlabs@contact.com
+              Contact Us
             </Button>
           </a>
         </div>
