@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
-import { Linkedin, Mail, Send } from "lucide-react";
+import { Linkedin, Twitter, Mail, Send } from "lucide-react";
 import { z } from "zod";
 
 const contactSchema = z.object({
@@ -151,13 +151,22 @@ const Footer = () => {
                 <Mail className="h-6 w-6" />
               </a>
               <a 
-                href="https://www.linkedin.com/company/breakout-labs-llc/"
+                href="https://linkedin.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-primary transition-colors"
                 aria-label="LinkedIn"
               >
                 <Linkedin className="h-6 w-6" />
+              </a>
+              <a 
+                href="https://twitter.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-muted-foreground hover:text-primary transition-colors"
+                aria-label="Twitter"
+              >
+                <Twitter className="h-6 w-6" />
               </a>
             </div>
             
