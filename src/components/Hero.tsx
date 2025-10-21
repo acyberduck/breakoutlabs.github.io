@@ -46,7 +46,7 @@ const Hero = () => {
           <img 
             src={theme === "dark" ? logoDark : logoLight} 
             alt="Breakout Labs" 
-            className="w-96 h-auto mx-auto mb-6 object-contain"
+            className="w-96 h-auto mx-auto mb-2 object-contain"
             style={{ clipPath: 'inset(28% 0 28% 0)' }}
           />
           
