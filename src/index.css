@@ -32,7 +32,7 @@ All colors MUST be HSL.
     --muted-foreground: 0 0% 40%;
 
     /* Accent with good contrast on white */
-    --accent: 150 100% 30%;
+    --accent: 150 100% 42%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
@@ -80,8 +80,8 @@ All colors MUST be HSL.
     --muted-foreground: 0 0% 70%;
 
     /* Neon green accent */
-    --accent: 150 100% 50%;
-    --accent-foreground: 0 0% 0%;
+    --accent: 150 100% 42%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
