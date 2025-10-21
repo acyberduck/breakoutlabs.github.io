@@ -34,8 +34,8 @@ const Navigation = () => {
             <img 
               src={theme === "dark" ? logoDark : logoLight} 
               alt="Breakout Labs Logo" 
-              className="h-16 w-auto object-contain"
-              style={{ objectPosition: 'center', clipPath: 'inset(25% 0 25% 0)' }}
+              className="h-20 w-auto object-contain"
+              style={{ objectPosition: 'center', clipPath: 'inset(28% 0 28% 0)' }}
             />
           </div>
 
