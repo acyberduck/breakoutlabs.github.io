@@ -151,7 +151,7 @@ const Footer = () => {
                 <Mail className="h-6 w-6" />
               </a>
               <a 
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/company/breakout-labs-llc/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-primary transition-colors"
