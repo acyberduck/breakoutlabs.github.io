@@ -42,7 +42,7 @@ const Hero = () => {
           <img 
             src={logo} 
             alt="Breakout Labs" 
-            className="w-32 h-32 mx-auto mb-8 animate-float"
+            className="w-32 h-32 mx-auto mb-8"
           />
           
           <h1 className="text-5xl md:text-7xl font-black mb-6 bg-gradient-primary bg-clip-text text-transparent">

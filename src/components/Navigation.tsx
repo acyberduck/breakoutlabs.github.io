@@ -21,7 +21,7 @@ const Navigation = () => {
             <img 
               src={logo} 
               alt="Breakout Labs Logo" 
-              className="h-12 w-12 animate-float"
+              className="h-12 w-12"
             />
             <div className="hidden md:block">
               <h1 className="text-xl font-bold bg-gradient-primary bg-clip-text text-transparent">
