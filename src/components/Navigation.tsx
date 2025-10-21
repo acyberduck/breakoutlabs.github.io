@@ -2,7 +2,8 @@ import { useState } from "react";
 import { Menu, X, Moon, Sun } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useTheme } from "next-themes";
-import logo from "@/assets/breakout-labs-logo.png";
+import logoDark from "@/assets/breakout-labs-logo-dark.png";
+import logoLight from "@/assets/breakout-labs-logo-light.png";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,7 +22,7 @@ const Navigation = () => {
           {/* Logo and Tagline */}
           <div className="flex items-center gap-4">
             <img 
-              src={logo} 
+              src={theme === "dark" ? logoDark : logoLight} 
               alt="Breakout Labs Logo" 
               className="h-12 w-12"
             />

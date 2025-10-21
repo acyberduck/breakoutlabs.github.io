@@ -1,8 +1,12 @@
 import { Button } from "@/components/ui/button";
 import { Mail } from "lucide-react";
-import logo from "@/assets/breakout-labs-logo.png";
+import { useTheme } from "next-themes";
+import logoDark from "@/assets/breakout-labs-logo-dark.png";
+import logoLight from "@/assets/breakout-labs-logo-light.png";
 
 const Hero = () => {
+  const { theme } = useTheme();
+  
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
       {/* Animated Background Elements */}
@@ -40,7 +44,7 @@ const Hero = () => {
       <div className="relative z-10 container mx-auto px-4 text-center">
         <div className="animate-fade-in">
           <img 
-            src={logo} 
+            src={theme === "dark" ? logoDark : logoLight} 
             alt="Breakout Labs" 
             className="w-32 h-32 mx-auto mb-8"
           />
