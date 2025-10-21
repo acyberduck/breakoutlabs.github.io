@@ -47,7 +47,7 @@ const Hero = () => {
             src={theme === "dark" ? logoDark : logoLight} 
             alt="Breakout Labs" 
             className="w-96 h-auto mx-auto mb-12 object-contain"
-            style={{ clipPath: 'inset(20% 0 20% 0)' }}
+            style={{ clipPath: 'inset(28% 0 28% 0)' }}
           />
           
           <p className="text-2xl md:text-3xl font-light mb-8 text-foreground">

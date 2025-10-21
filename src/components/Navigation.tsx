@@ -26,7 +26,7 @@ const Navigation = () => {
   };
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-lg border-b border-border">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-lg">
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           {/* Logo - centered and animated */}
@@ -34,8 +34,8 @@ const Navigation = () => {
             <img 
               src={theme === "dark" ? logoDark : logoLight} 
               alt="Breakout Labs Logo" 
-              className="h-20 w-auto object-contain"
-              style={{ objectPosition: 'center', clipPath: 'inset(28% 0 28% 0)' }}
+              className="h-24 w-auto object-contain"
+              style={{ objectPosition: 'center', clipPath: 'inset(30% 0 30% 0)' }}
             />
           </div>
 
