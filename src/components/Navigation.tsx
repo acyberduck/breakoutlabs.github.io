@@ -19,19 +19,14 @@ const Navigation = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-lg border-b border-border">
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-          {/* Logo and Tagline */}
-          <div className="flex items-center gap-4">
+          {/* Logo */}
+          <div className="flex items-center">
             <img 
               src={theme === "dark" ? logoDark : logoLight} 
               alt="Breakout Labs Logo" 
-              className="h-12 w-12"
+              className="h-16 w-auto object-contain"
+              style={{ objectPosition: 'center', clipPath: 'inset(15% 0 15% 0)' }}
             />
-            <div className="hidden md:block">
-              <h1 className="text-xl font-bold bg-gradient-primary bg-clip-text text-transparent">
-                Breakout Labs
-              </h1>
-              <p className="text-xs text-muted-foreground">Designing Tomorrow's Finance, Today</p>
-            </div>
           </div>
 
           {/* Desktop Navigation */}

@@ -56,8 +56,8 @@ All colors MUST be HSL.
   }
 
   .dark {
-    /* Pure black futuristic background */
-    --background: 0 0% 0%;
+    /* Dark background matching logo */
+    --background: 216 7% 17%;
     --foreground: 0 0% 100%;
 
     /* Card with subtle dark elevation */
