@@ -8,6 +8,54 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
+    /* Light mode - clean white background with vibrant accents */
+    --background: 0 0% 100%;
+    --foreground: 0 0% 5%;
+
+    /* Card with subtle elevation */
+    --card: 0 0% 98%;
+    --card-foreground: 0 0% 5%;
+
+    --popover: 0 0% 98%;
+    --popover-foreground: 0 0% 5%;
+
+    /* Electric blue - primary brand color (darker in light mode) */
+    --primary: 190 100% 35%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Neon green - accent color (darker for better contrast) */
+    --secondary: 150 100% 35%;
+    --secondary-foreground: 0 0% 100%;
+
+    /* Metallic silver muted tones */
+    --muted: 0 0% 92%;
+    --muted-foreground: 0 0% 40%;
+
+    /* Accent with good contrast on white */
+    --accent: 150 100% 30%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* Subtle borders */
+    --border: 0 0% 88%;
+    --input: 0 0% 92%;
+    --ring: 190 100% 35%;
+
+    --radius: 0.75rem;
+
+    /* Gradients for light mode */
+    --gradient-primary: linear-gradient(135deg, hsl(190 100% 35%), hsl(150 100% 35%));
+    --gradient-glow: radial-gradient(circle, hsl(190 100% 35% / 0.1), transparent);
+    
+    /* Subtle shadows for light mode */
+    --shadow-neon-blue: 0 0 20px hsl(190 100% 35% / 0.3), 0 0 40px hsl(190 100% 35% / 0.15);
+    --shadow-neon-green: 0 0 20px hsl(150 100% 30% / 0.3), 0 0 40px hsl(150 100% 30% / 0.15);
+    --shadow-elegant: 0 10px 40px hsl(0 0% 0% / 0.1);
+  }
+
+  .dark {
     /* Pure black futuristic background */
     --background: 0 0% 0%;
     --foreground: 0 0% 100%;
@@ -42,8 +90,6 @@ All colors MUST be HSL.
     --border: 0 0% 20%;
     --input: 0 0% 15%;
     --ring: 190 100% 50%;
-
-    --radius: 0.75rem;
 
     /* Gradients for glow effects */
     --gradient-primary: linear-gradient(135deg, hsl(190 100% 50%), hsl(150 100% 50%));
