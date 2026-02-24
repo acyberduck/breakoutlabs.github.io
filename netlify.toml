@@ -1,3 +1,9 @@
+# netlify.toml
+[build]
+  base = ""              # empty = repo root (do NOT use "dist" here)
+  command = "npm run build"   # or leave out if Netlify auto-detects
+  publish = "dist"       # the folder Vite creates
+
 [[redirects]]
   from = "/*"
   to = "/index.html"
